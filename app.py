@@ -98,7 +98,7 @@ elif menu == "Remove a Book":
     if st.button("Remove Book"):
         library = [book for book in library if book["title"] != selected_book]
         save_library(library)
-        st.success(f"🗑️ '{selected_book}' added successfully!")
+        st.success(f"🗑️ '{selected_book}' Remove successfully!")
 
 # 📌 **3. Search for a Book**
 elif menu == "Search for a Book":
